@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"/>
+    <title>Document</title>
+    <style>
+        body {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Poppins", sans- serif;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .nav {
+        padding: 15px;
+      }
+      .line {
+        float: left;
+        margin-left: -30px;
+      }
+       .word {
+        letter-spacing: 1px;
+        line-height: 26.6px;
+        font-weight: 300;
+        font-size: 20px;
+        margin-left: 20px;
+        font-family: "Source Code Pro", monospace;
+      }
+      .fa-caret-right {
+        color: black;
+        font-size: large;
+        float: right;
+        /* margin-top: -18px; */
+        margin-top: -20px;
+        margin-right: 5px;
+        margin-left: 3px;
+      }
+      #aae {
+        color: black;
+        font-size: large;
+        float: right;
+        margin-left: 75px;
+      }
+      .round1 {
+        border-radius: 5px;
+        float: right;
+        margin-left: 640px;
+        display: none;
+      }
+      .firsst {
+        margin-left: 4px;
+        margin-top: -30px;
+        font-size: 16px;
+        font-family: "Cabin", sans-serif;
+        letter-spacing: 1px;
+        background-color: rgb(245, 245, 245);
+        height: 24px;
+        width: 95px;
+        padding-left: 7px;
+        padding-top: 10px;
+        border-radius: 4px;
+      }
+      .nav {
+        background-color:white;
+      }
+      .container {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        top: -5px;
+        z-index: 1;
+      }
+      /* media query of nav */
+      @media only screen and (min-width: 700px) {
+        .bar1 {
+  width: 52px;
+  height: 3px;
+  background-color: black;
+  transition: 0.4s;
+}
+.bar2 {
+  width: 39px;
+  height: 3px;
+  background-color: black;
+  margin-top:10px; 
+  transition: 0.4s;
+}
+.changes .bar1 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(45deg)
+    translate(1px, -4px);
+}
+.changes .bar2 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(-45deg)
+    translate(13px, -7px);
+}
+#container{
+margin-top:-2px;
+} 
+.cross:hover > .bar1 
+{ 
+margin-top:-3px;    
+}
+.cross:hover > .bar2 
+{ 
+margin-top:16px; 
+}
+.cross.changes:hover > .bar1 {
+  margin-top:0px;
+}
+.cross.changes:hover > .bar2 {
+  margin-top:10px;  
+}
+     
+        .word {
+          margin-left: 40px;
+          font-size: 32px;
+        }
+        .round1 {
+          display: inline-block;
+        }
+      }
+
+      .bar1 {
+  width: 52px;
+  height: 3px;
+  background-color: black;
+  transition: 0.4s;
+}
+.bar2 {
+  width: 39px;
+  height: 3px;
+  background-color: black;
+  margin-top:10px; 
+  transition: 0.4s;
+}
+.changes .bar1 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(45deg)
+    translate(1px, -4px);
+}
+.changes .bar2 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(-45deg)
+    translate(13px, -7px);
+}
+#container{
+margin-top:-2px;
+} 
+.cross:hover > .bar1 
+{ 
+margin-top:-3px;    
+}
+.cross:hover > .bar2 
+{ 
+margin-top:16px; 
+}
+.cross.changes:hover > .bar1 {
+  margin-top:0px;
+}
+.cross.changes:hover > .bar2 {
+  margin-top:10px;  
+}
+ .left{
+  /* float: right; */
+  text-align: center;
+  display: none;
+} 
+.change .left{
+  display: inline-block;
+  
+  position: fixed;
+  margin: 0px;
+}
+
+.firstt{
+          width:420px; 
+          font-size: 45px;
+          font-family:Arial, Helvetica, sans-serif;
+          margin-top: 15px;
+          letter-spacing: 1px;
+          text-align: left;
+          color:black;
+      }
+      hr{
+          margin-top: -33px;
+          width: 400px;
+          color: rgb(245, 245, 245);
+      }
+      .and{
+          position:fixed;
+          width: 100%;
+          margin-left: auto;
+          margin-right:auto;
+          margin-top: 100px;
+          
+      } 
+      @media only screen and (max-width: 850px){
+          .firstt{
+              font-size: 33px;
+              letter-spacing: 1px;
+              margin-top: 15px;
+          }
+          hr{
+              margin-top: -21px;
+          }
+      }
+      @media only screen and (max-width: 550px){
+          .firstt{
+              font-size: 20px;
+              letter-spacing: 1px;
+              margin-top: 15px;
+          }
+          hr{
+              margin-top: -15px;
+              width:420px;
+          }
+      }
+      .last{
+          padding-top: 8800px;
+      }
+     
+      .box{
+        margin-left: 15px;
+        width:500px;
+        color:black;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        font-size: 16px;
+        position: relative;
+        top:5px;
+        text-decoration: none;
+      }
+      .rou{
+        background-color: rgb(245, 245, 245);
+        width:100px;
+        height: 35px;
+        color:black;
+        margin-top: -24px;
+        /* margin-left: 1110px; */
+        float:right;
+        margin-right: 12px;
+        border-radius: 5px;
+      }
+      @media only screen and (max-width:700px){
+         .rou{
+          display: none;
+        } 
+      }
+      @media only screen and (min-width:701px){
+         .link{
+          display: none;
+        }
+      }
+      .brands{
+          text-align: center;
+          letter-spacing: 1.5px;
+          font-size: 40px;
+      }
+
+      @media only screen and (max-width:900px){
+          .brands{
+              font-size: 30px;
+          }
+      }
+      .the{
+          background-color: rgb(245, 245, 245);
+          padding-bottom: 10px;
+          padding-top: 10px;
+          font-size: 23px;
+      }
+      .st{
+          text-align: center;
+      }
+      @media only screen and (max-width:550px){
+          .st{
+              font-size: 16px;
+              padding-bottom:3px;
+              padding-top: 3px;
+          }
+      }
+
+      @media only screen and (min-width:770px){
+        .third{
+          width:635px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-bottom: 50px;
+        } 
+        .thirds{
+          font-size: 20px;
+          padding-bottom: -500px;
+        
+        }
+       
+      }
+      .thirds{
+          text-align: center;
+          /* font-size: 20px; */
+          font-size: 17px;
+          letter-spacing: 1px;
+          font-weight: bold;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 35px;
+      }
+      .third{
+        line-height: 35px;
+        /* width:650px; */
+        margin-left: 300;
+        margin-right: auto;
+      }
+      hr{
+        width:700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media only screen and (max-width:730px){
+        hr{
+          width: auto;
+        }
+      }
+
+      .secsmall {
+        column-count: 2;
+        /* column-gap: 2px; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+      }
+      .bb {
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+        margin-left: -40px;
+      }
+
+      @media only screen and (min-width: 770px) {
+        .secsmall{
+          column-count: 3px;
+          display: flex;
+          width: 750px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .paratwo{
+          font-size:33px;
+        }
+        .bb{
+          position: relative;
+          margin-left: -13px;
+          margin-right: auto;
+          font-size: 18px;
+        }
+      }
+      ul{
+          list-style-type: none;
+      } 
+      .lit{
+        background-color: rgb(245, 245, 245);
+        padding-top: 1px;
+        padding-bottom: 0.5px;  
+        /* height:15px; */
+        padding-left: 90px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 50px;
+      }
+
+
+
+
+
+      .atlast{
+                 
+                 width:91%;
+                 margin-left: auto;
+                 margin-right: auto;
+                 padding-top: 50px;
+               }
+               .acc{
+                 text-decoration: none;
+                 color:black;
+                 font-weight: bold;
+                 letter-spacing: 1px;
+                 font-size: 30px;
+                
+                 width:300px;  
+               }
+               .head{
+                 font-size: 14.5px;
+                 width:330px;
+                
+               } 
+               .border{
+                  border: 2px solid black;
+              padding-left:30px;
+              padding-right:25px;
+              margin-top: 0px;
+              height:41px;
+              text-align:center;
+              border-radius: 5px;
+              font-size:18px;
+              width:107px;
+              background-color:black; 
+              position:relative;
+               }
+               .write{
+                color:white;
+                 font-family: 'Montserrat', sans-serif;
+                 font-size:19px;
+                 position: relative;
+                 text-decoration: none;
+                 margin-left: -42px;
+                 text-decoration: none;
+                 top:5px;
+               }
+               .arey{
+                 color: grey;
+                 font-size:45px;
+                   position: absolute; 
+                   
+                   top: -22px;
+               }
+               .footer
+{
+  color:rgb(185, 185, 185);
+  font-weight:300;
+  letter-spacing:0.5px;
+  font-size:12px;
+ 
+  margin-top:20px;
+}
+.Privacy
+{
+   color:rgb(185, 185, 185);
+  text-decoration:underline;
+}
+.chang{
+  display: none;
+}
+.ang{
+  display: none;
+}
+.accdd{
+  text-decoration: none;
+  color: black;
+}
+     
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+          <ul>
+            <li class="line">
+               <a id="container" class = "cross" onclick="myFunction()" href="#">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+               </a>
+              
+               <a id="whole" class="first" href="#">
+                <div class="left">
+                  <div class="and">
+                    <center> <p class="firstt">World Media Group</p>
+                     <hr>
+                     <p class="firstt">World Accelerator</p>
+                     <hr>
+                     <p class="firstt">World Media Group</p>
+                     <hr>
+                     <p class="firstt">News</p>
+                     <hr>
+                     <p class="firstt">Contact Us</p>
+                     <hr></center>
+                    </div>
+                    <div class="last"></div>
+            
+                  </div>
+                </a>
+            </li>
+            <div class="all" id="alls">
+              <li class="word"><a class="accdd" href="demo.html">World Accelerator</a></li>
+            <li class="link">
+              <i class="fa fa-caret-right"></i>
+            </li>
+            
+              <li class="rou">
+              <a class="box" href="world.html">
+                <b>World</b>
+                <i id="aae" class="fa fa-caret-right"></i>
+              </a>
+            </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div id="who">
+      <div id="pho" class="no">
+          <br><br><br><br><br>
+          <p class="brands"><strong>Brands</strong></p>
+      </div>
+      <div class="the">
+          <p class="st"><strong>The strength of the right domain</strong></p>
+      </div>
+      <div class="third">
+          <p class="thirds">
+            World Accelerator offers valuable ‘properties’ in the form of
+            exclusive branded domain names. With a premium brand you
+            open more doors, improve conversions, improve retention
+            and accelerate your business.
+          </p>
+      </div>
+      <hr>
+      <div class="secsmall">
+        <ul>
+          <li class="bb"><strong>Business</strong></li>
+          <li class="bb">autobody.com</li>
+          <li class="bb">autobuying.com</li>
+          <li class="bb">bankingcard.com</li>
+          <li class="bb">cyberservices.com</li>
+          <li class="bb">diploma.com</li>
+          <li class="bb">directories.net</li>
+          <li class="bb">eorganizer.com</li>
+          <li class="bb">fashionstore.com</li>
+          <li class="bb">fashionwear.com</li>
+          <li class="bb">fastservice.com</li>
+          <li class="bb">groceries.net</li>
+          <li class="bb">guaranteed.com</li>
+          <li class="bb">improved.com</li>
+          <li class="bb">instruction.com</li>
+          <li class="bb">ipolls.com</li>
+          <li class="bb">luckynumber.com</li>
+          <li class="bb">mustbuy.com</li>
+          <li class="bb">onlinehomes.com</li>
+          <li class="bb">partnercenter.net</li>
+          <li class="bb">pcbanking.com</li>
+          <li class="bb">pcbanking.net</li>
+          <li class="bb">premiumproducts.com</li>
+          <li class="bb">premiumservice.com</li>
+          <li class="bb">qualityservice.com</li>
+          <li class="bb">remoteoffice.com</li>
+          <li class="bb">revenue.com</li>
+          <li class="bb">topservice.com</li>
+          <li class="bb">tourgroup.com</li>
+          <li class="bb">tutorial.net</li>
+          <li class="bb">voice.net</li>
+          <li class="bb">workaholic.com</li>
+        </ul>
+  
+        <ul>
+            <li class="bb"><strong>Business</strong></li>
+            <li class="bb">autobody.com</li>
+            <li class="bb">autobuying.com</li>
+            <li class="bb">bankingcard.com</li>
+            <li class="bb">cyberservices.com</li>
+            <li class="bb">diploma.com</li>
+            <li class="bb">directories.net</li>
+            <li class="bb">eorganizer.com</li>
+            <li class="bb">fashionstore.com</li>
+            <li class="bb">fashionwear.com</li>
+            <li class="bb">fastservice.com</li>
+            <li class="bb">groceries.net</li>
+            <li class="bb">guaranteed.com</li>
+            <li class="bb">improved.com</li>
+            <li class="bb">instruction.com</li>
+            <li class="bb">ipolls.com</li>
+            <li class="bb">luckynumber.com</li>
+            <li class="bb">mustbuy.com</li>
+            <li class="bb">onlinehomes.com</li>
+            <li class="bb">partnercenter.net</li>
+            <li class="bb">pcbanking.com</li>
+            <li class="bb">pcbanking.net</li>
+            <li class="bb">premiumproducts.com</li>
+            <li class="bb">premiumservice.com</li>
+            <li class="bb">qualityservice.com</li>
+            <li class="bb">remoteoffice.com</li>
+            <li class="bb">revenue.com</li>
+            <li class="bb">topservice.com</li>
+            <li class="bb">tourgroup.com</li>
+            <li class="bb">tutorial.net</li>
+            <li class="bb">voice.net</li>
+            <li class="bb">workaholic.com</li>
+          </ul>
+  
+          <ul>
+            <li class="bb"><strong>Business</strong></li>
+            <li class="bb">autobody.com</li>
+            <li class="bb">autobuying.com</li>
+            <li class="bb">bankingcard.com</li>
+            <li class="bb">cyberservices.com</li>
+            <li class="bb">diploma.com</li>
+            <li class="bb">directories.net</li>
+            <li class="bb">eorganizer.com</li>
+            <li class="bb">fashionstore.com</li>
+            <li class="bb">fashionwear.com</li>
+            <li class="bb">fastservice.com</li>
+            <li class="bb">groceries.net</li>
+            <li class="bb">guaranteed.com</li>
+            <li class="bb">improved.com</li>
+            <li class="bb">instruction.com</li>
+            <li class="bb">ipolls.com</li>
+            <li class="bb">luckynumber.com</li>
+            <li class="bb">mustbuy.com</li>
+            <li class="bb">onlinehomes.com</li>
+            <li class="bb">partnercenter.net</li>
+            <li class="bb">pcbanking.com</li>
+            <li class="bb">pcbanking.net</li>
+            <li class="bb">premiumproducts.com</li>
+            <li class="bb">premiumservice.com</li>
+            <li class="bb">qualityservice.com</li>
+            <li class="bb">remoteoffice.com</li>
+            <li class="bb">revenue.com</li>
+            <li class="bb">topservice.com</li>
+            <li class="bb">tourgroup.com</li>
+            <li class="bb">tutorial.net</li>
+            <li class="bb">voice.net</li>
+            <li class="bb">workaholic.com</li>
+          </ul>
+      </div>
+      <div class="lit">
+        <p class="litone"><strong>*Developed</strong></p>
+      </div>
+      <div class="atlast">
+        <a class="acc" href="#">World Acceleration</a>
+          <p class="head"><strong>Headquartered in New York City; working
+            with companies located globally and
+            across the US.</strong></p> 
+           <div class="border">
+             <a class="write" href="#"><strong>Contact Us</strong>
+              <span class="arey">&#8594;</span>
+             </a>
+           </div>
+           <div class="footer">© World Media Group, LLC. All Rights Reserved. 
+            <a class="Privacy" href="#">Privacy</a>
+            </div>
+      </div>  
+      </div>
+      
+      <script>
+        function myFunction() {
+       var element = document.getElementById("container");
+       var ment = document.getElementById("who");
+       var el = document.getElementById("alls");
+      //  var ele = document.getElementById("footers"); 
+       var elements = document.getElementById("whole"); 
+       element.classList.toggle("changes"); 
+       elements.classList.toggle("change"); 
+      //  ele.classList.toggle("changed"); 
+       el.classList.toggle("chang"); 
+       ment.classList.toggle("ang"); 
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+        .bar1 {
+  width: 52px;
+  height: 3px;
+  background-color: black;
+  transition: 0.4s;
+}
+.bar2 {
+  width: 39px;
+  height: 3px;
+  background-color: black;
+  margin-top:10px; 
+  transition: 0.4s;
+}
+.changes .bar1 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(45deg)
+    translate(1px, -4px);
+}
+.changes .bar2 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(-45deg)
+    translate(13px, -7px);
+}
+#container{
+margin-top:-2px;
+} 
+.cross:hover > .bar1 
+{ 
+margin-top:-3px;    
+}
+.cross:hover > .bar2 
+{ 
+margin-top:16px; 
+}
+.cross.changes:hover > .bar1 {
+  margin-top:0px;
+}
+.cross.changes:hover > .bar2 {
+  margin-top:10px;  
+}
+ .left{
+  /* float: right; */
+  text-align: center;
+  display: none;
+} 
+.change .left{
+  display: inline-block;
+  background-color:black;
+  position: fixed;
+  margin: 0px;
+}
+.firstt{
+          width:420px; 
+          font-size: 45px;
+          font-family:Arial, Helvetica, sans-serif;
+          margin-top: 15px;
+          letter-spacing: 1px;
+          text-align: left;
+          color:black;
+      }
+      hr{
+          margin-top: -33px;
+          width: 400px;
+          /* background-color: red; */
+          color: rgb(245, 245, 245);
+      }
+      .and{
+          position:fixed;
+          width: 100%;
+          margin-left: auto;
+          margin-right:auto;
+          margin-top: 100px;
+          
+      } 
+      @media only screen and (max-width: 850px){
+          .firstt{
+              font-size: 33px;
+              letter-spacing: 1px;
+              margin-top: 15px;
+          }
+          hr{
+              margin-top: -21px;
+          }
+      }
+      @media only screen and (max-width: 550px){
+          .firstt{
+              font-size: 20px;
+              letter-spacing: 1px;
+              margin-top: 15px;
+          }
+          hr{
+              margin-top: -15px;
+              width:420px;
+          }
+      }
+      .last{
+          padding-top: 8800px;
+      }
+      body {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Poppins", sans- serif;
+      }
+      .bb {
+        list-style-type: none;
+      }
+      .nav {
+        padding: 15px;
+      }
+      .line {
+        float: left;
+        margin-left: -30px;
+      }
+       .word {
+        letter-spacing: 1px;
+        line-height: 26.6px;
+        font-weight: 300;
+        font-size: 20px;
+        margin-left: 20px;
+        font-family: "Source Code Pro", monospace;
+      }
+      .fa-caret-right {
+        color: black;
+        font-size: large;
+        float: right;
+        margin-top: -17px;
+        margin-right: 5px;
+        margin-left: 25px;
+      }
+     
+      .round1 {
+        border-radius: 5px;
+        float: right;
+        margin-left: 640px;
+        display: none;
+      }
+      .firsst {
+        margin-left: 4px;
+        margin-top: -25px;
+        font-size: 15px;
+        font-family: "Cabin", sans-serif;
+        letter-spacing: 1px;
+        background-color: white;
+        height: 24px;
+        width: 120px;
+        padding-left: 7px;
+        padding-top: 10px;
+        border-radius: 4px;
+      }
+      .nav {
+        background-color: rgb(245, 245, 245);
+      }
+      .container {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        top: -5px;
+        z-index: 1;
+      }
+      @media only screen and (min-width: 700px) {
+        .bar1 {
+  width: 52px;
+  height: 3px;
+  background-color: black;
+  transition: 0.4s;
+}
+#aae {
+        color: black;
+        font-size: large;
+        float: right;
+        margin-left: 22px;
+        margin-top: -17px;
+      }
+.link{
+    display: none;
+}
+.bar2 {
+  width: 39px;
+  height: 3px;
+  background-color: black;
+  margin-top:10px; 
+  transition: 0.4s;
+}
+.changes .bar1 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(45deg)
+    translate(1px, -4px);
+}
+.changes .bar2 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(-45deg)
+    translate(13px, -7px);
+}
+#container{
+margin-top:-2px;
+} 
+.cross:hover > .bar1 
+{ 
+margin-top:-3px;    
+}
+.cross:hover > .bar2 
+{ 
+margin-top:16px; 
+}
+.cross.changes:hover > .bar1 {
+  margin-top:0px;
+}
+.cross.changes:hover > .bar2 {
+  margin-top:10px;  
+}
+ .word {
+          margin-left: 40px;
+          font-size: 32px;
+        }
+        .round1 {
+          display: inline-block;
+        }
+      }
+      .part{ 
+          text-align: center;
+          width:493px;
+          letter-spacing: 0.5px;
+          font-size: 20px;
+          margin-top: 80px;
+          margin-left: auto;
+          margin-right: auto;
+          line-height: 35px;
+          padding-bottom: 80px;
+          background-color: rgb(245, 245, 245);
+      }
+      .whole
+      {
+        background-color: rgb(245, 245, 245);
+        padding-top: 50px;
+      }
+      @media only screen and (max-width: 650px) {
+          .part{
+              font-size: 16px;
+              width:auto; 
+              padding:0px 10px;
+          }
+      }
+      @media only screen and (min-width: 480px) {
+        .Row{
+          display: none;
+        }
+
+        }
+        @media only screen and (max-width: 479px) {
+          .Roww{
+            display: none;
+          }
+        }
+         @media all and (max-width: 782px) and (min-width: 481px) {
+           .Row{
+             display: none;
+           }
+           .Roww{
+             display: none;
+           }
+           }
+           @media only screen and (min-width: 783px) {
+             .Rowww{
+               display: none;
+             }
+           }
+           @media only screen and (max-width: 774px) {
+             .cont{
+               display: none;
+             }
+           } 
+           @media only screen and (min-width: 775px) {
+             .contsmall{
+               display: none;
+             }
+           }
+      .Rowww{
+        width:auto;
+        }
+      .Roww{
+         width: 95%;
+         margin-left: auto; 
+         margin-right: auto;
+      } 
+      .pics{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pic{
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pics1{
+        width:85%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pics2{
+        width:85%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .fakes{
+        top: -15px;
+        position: relative;
+      }
+      .fakess{
+        top: -15px;
+        position: relative;
+      }
+      .search{
+        position: relative;
+        top:-15px;
+        padding-bottom: 20px;
+      }
+      .searchh{
+        position: relative;
+        top:-15px;
+        padding-bottom: 20px;
+      }
+      .searchhh{
+        position: relative;
+        top:-10px;
+      }
+      .srch{
+        padding-bottom: 20px;
+      }
+      .fast{
+        padding-bottom: 20px;
+      }
+      .fastt{
+        padding-bottom: 20px;
+        position: relative;
+        top:8px;
+      }
+      .fasttt{
+        padding-bottom: 20px;
+      }
+      .fastttt{
+        padding-bottom: 20px;
+      }
+      .fasttttt{
+        padding-bottom: 20px;
+      }
+      .box{
+        padding-bottom: 60px;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 28px;
+      }
+      .boxx{
+        margin-top: 70px;
+      }
+      .fi{
+        width:700px;
+        margin-left: auto;
+        margin-right: auto; 
+      }
+      .se{
+        width:auto; 
+        margin-left: 10px;
+        margin-right: 10px; 
+      }
+      .boox{
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 16px;
+      }
+      .booxx{
+        margin-top: 30px;
+      }
+      .list{
+        margin-left: 10px;
+      }
+      .lists{
+        margin-top: 5px;
+        margin-left: 10px;
+        position: absolute;
+      }
+      .world{
+        padding-top: 55px;
+        text-align: center;
+        
+      }
+      .woone{
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 28px;
+      }
+      .wotwo{
+        font-size: 13px;
+        text-align: center;
+        white-space: pre;
+        line-height: 35px;
+        letter-spacing: 1px;
+      }
+     .d{
+       font-size: 16px;
+       letter-spacing: 1px;
+       margin-top: -17px;
+       text-align: center;
+       padding-bottom: 50px;
+     }
+     .lis{
+       padding-top: 5px;
+       margin-left: 5px;
+       position: absolute;
+     }
+     @media only screen and (max-width: 540px) {
+       .wotwo{
+         white-space: normal;
+         padding-left: 5px;
+         padding-right: 5px;
+         line-break: normal;
+       }
+     }
+    h4{
+      font-size: 24px;
+      letter-spacing: 1.5px;
+    }
+    .aa{
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      white-space: pre;
+      line-height: 5px;   
+      margin-top: -20px;
+    }
+    .ab{
+      white-space: pre;
+      line-height: 30px;
+    }
+     .end{
+      margin-left: 15%;
+      /* margin-right: auto; */
+      background-color: rgb(245, 245, 245); 
+    } 
+    footer{
+      margin-left: 12px;
+      color: rgb(146, 140, 140);
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      padding-bottom: 50px;
+    }
+    .endd{
+      background-color: rgb(245, 245, 245);
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media only screen and (max-width: 876px) {
+      .aa{
+        white-space: normal;
+        line-height: 38px;    
+      }
+      .endd{
+      background-color: rgb(245, 245, 245);
+    }
+      .ab{
+        white-space: normal;
+        line-height: 25px;
+      }
+      .end{
+      margin-left: 30px;
+      margin-right: 6px;
+    }
+    }
+    .changed {
+      display: none;
+    }
+    .chang{
+      display: none;
+    }
+    .ang{
+      background-color: white;
+    }
+    .accdd{
+      text-decoration: none;
+      color: black;
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav" id="navs">
+          <ul class="bb">
+            <li class="line">
+               <a id="container" class = "cross" onclick="myFunction()" href="#">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+               </a>
+               <a id="whole" class="first"href="#">
+                <div class="left">
+                  <div class="and">
+                    <center> <p class="firstt">World Media Group</p>
+                     <hr>
+                     <p class="firstt">World Accelerator</p>
+                     <hr>
+                     <p class="firstt">World Media Group</p>
+                     <hr>
+                     <p class="firstt">News</p>
+                     <hr>
+                     <p class="firstt">Contact Us</p>
+                     <hr></center>
+                    </div>
+                    <div class="last"></div>
+                  </div>
+                </a>
+            </li>
+            <div class="all" id="alls">
+              <li class="word"><a class="accdd" href="demo.html">World Media Group</a></li>
+            <li class="link">
+              <i class="fa fa-caret-right"></i>
+            </li>
+            <li class="round1">
+              <p class="firsst">
+                <b>Accelerator</b>
+                <i id="aae" class="fa fa-caret-right"></i>
+              </p>
+            </li>
+            </div>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="footer" id="footers">
+      <div class="whole">
+      <p class="part">
+        A generic domain name is a natural brand. World Media Group,
+         LLC (“World”) specializes in bringing these natural brands 
+         to life in valuable ways for businesses and consumers. We
+          build with our own team of talented developers or in conjunction
+           with partners who are aligned to ensure the brands and their 
+           businesses meet their tremendous potential.
+      </p>
+      </div>
+      <center>
+      <div class="Row">
+          <div class="pic1">
+      <img src="https://www.world.com/wp-content/uploads/2020/06/doctor-clr-300x68.png" width="250">
+      </div>
+      <br>
+      <div class="pic2">
+     <img src="https://www.world.com/wp-content/uploads/2020/06/lawyer-logo.png" width="250">
+     </div>
+     <br>
+     <div class="pic3">
+     <img src="https://www.world.com/wp-content/uploads/2020/06/india-clr.png" width="150">
+     </div>
+     <br>
+     <div class="pic4">
+     <img src="https://www.world.com/wp-content/uploads/2020/06/sweet-clr.png" width="200">
+     </div>
+     <br>
+     <div class="pic5">
+    <img src="https://www.world.com/wp-content/uploads/2020/06/calender-clr.png" width="255">
+    </div>
+    <br>
+    <div class="pic6">
+    <img src="https://www.world.com/wp-content/uploads/2020/06/scientist-clr.png" width="300">
+    </div>
+    <br>
+    <div class="pic7">
+     <img src="https://www.world.com/wp-content/uploads/2020/06/outerspace-clr.png" width="220">
+     </div>
+     <br>
+     <div class="pic8">
+    <img src="https://www.world.com/wp-content/uploads/2020/06/usa-clr.png" width="205">
+    </div>
+    <br>
+    <div class="pic9">
+    <img src="https://www.world.com/wp-content/uploads/2020/06/edibles-clr.png" width="195">
+    </div>
+    </div> 
+    </center>
+ <center>
+  <div class="Rowww">
+    <br><br>
+<img  class="srch" src="https://www.world.com/wp-content/uploads/2020/06/doctor-clr-300x68.png" width="210">
+<img  class="search" src="https://www.world.com/wp-content/uploads/2020/06/lawyer-logo.png" width="210" style="padding-left: 65px;">
+<img class="searchh" src="https://www.world.com/wp-content/uploads/2020/06/india-clr.png" width="130" style="padding-left: 65px;">
+<img  class="fast" src="https://www.world.com/wp-content/uploads/2020/06/sweet-clr.png" width="150" style="padding-left: 65px;">
+<img  class="searchhh" src="https://www.world.com/wp-content/uploads/2020/06/calender-clr.png" width="210" style="padding-left: 45px;">
+<img  class="fastt" src="https://www.world.com/wp-content/uploads/2020/06/scientist-clr.png" width="230" style="padding-left: 65px;">
+<img  class="fasttt" src="https://www.world.com/wp-content/uploads/2020/06/outerspace-clr.png" width="200" style="padding-left: 65px;">
+  <img  class="fastttt" src="https://www.world.com/wp-content/uploads/2020/06/usa-clr.png" width="150" style="padding-left: 65px;">
+  <img  class="fasttttt" src="https://www.world.com/wp-content/uploads/2020/06/edibles-clr.png" width="150" style="padding-left: 65px;">
+</div> 
+</center> 
+<center>
+ <div class="Roww">
+   <br><br>
+  <div class="pic">
+<img  class="fake" src="https://www.world.com/wp-content/uploads/2020/06/doctor-clr-300x68.png" width="270">
+<img  class="fakes" src="https://www.world.com/wp-content/uploads/2020/06/lawyer-logo.png" width="260" style="margin-left: 30px;">
+<img  class="fakess" src="https://www.world.com/wp-content/uploads/2020/06/india-clr.png" width="145" style="margin-left: 30px;">
+</div>
+<br><br>
+<div class="pics">
+<img src="https://www.world.com/wp-content/uploads/2020/06/sweet-clr.png" width="200" style="margin-left:0px;">
+<img src="https://www.world.com/wp-content/uploads/2020/06/calender-clr.png" width="260" style="margin-left: 130px;">
+</div>
+<br><br>
+<div class="pics1">
+<img src="https://www.world.com/wp-content/uploads/2020/06/scientist-clr.png" width="320" style="margin-left: 0px;">
+<img src="https://www.world.com/wp-content/uploads/2020/06/outerspace-clr.png" width="230" style="margin-left: 80px;">
+</div>
+<br><br>
+<div class="pics2">
+  <img src="https://www.world.com/wp-content/uploads/2020/06/usa-clr.png" width="190" style="margin-left:-130px;">
+  <img src="https://www.world.com/wp-content/uploads/2020/06/edibles-clr.png" width="190" style="margin-left: 130px;">
+ </div>
+</div></center>  
+<br><br><br>
+<div class="cont">
+<div class="box">
+  <hr class="fi">
+  <p class="boxx"><strong>Full List of Premium Domains</strong><span class="list"><img src="https://www.world.com/wp-content/themes/astrid-child/assets/images/black-arrow.png"></span></p> 
+</div>
+<hr class="fi">
+</div>
+<div class="contsmall">
+  <div class="boox">
+    <hr class="se">
+    <p class="booxx"><strong>Full List of Premium Domains<span class="lists"><img src="https://www.world.com/wp-content/themes/astrid-child/assets/images/black-arrow.png"></span></p> 
+    </strong></p> 
+  </div>
+  <hr class="se">
+</div>
+<div class="world">
+  <p class="woone"><strong>World Accelerator</strong></p>
+  <p class="wotwo"><strong>World Accelerator is the first Domain Accelerator and 
+    gives teams the opportunity to develop a business based 
+   on prime Internet real estate <u>(DN Journal.com)</u>.</strong></p>
+    <br>
+    <p class="d"><strong>Visit World Accelerator</strong> <span class="lis"><img src="https://www.world.com/wp-content/themes/astrid-child/assets/images/black-arrow.png"></span></p> 
+    </strong></p>
+</div>
+<div class="endd">
+<div class="end">
+  <br><br>
+  <h4>Contact Info</h4>
+<ul class="aa">
+  <li class="ab"><strong>General inquiries – domains @world.com</li>
+  <li class="ab">Working with us on one of our premium domain names – <u>Learn More</u>.</li>
+  <li class="ab">Some domains have email services offered by Mail.com. Questions or issues with email services at any of the
+  domains please visit <u>Mail.com</u> or submit a <u>query here.</u></strong></li>
+</ul><br>
+<footer>© World Media Group, LLC. All Rights Reserved. <u><strong>Privacy</strong></u></footer>
+</div>
+<br>
+</div>
+</div>
+
+      <script>
+        function myFunction() {
+       var element = document.getElementById("container");
+       var ment = document.getElementById("navs");
+       var el = document.getElementById("alls");
+       var ele = document.getElementById("footers"); 
+       var elements = document.getElementById("whole"); 
+       element.classList.toggle("changes"); 
+       elements.classList.toggle("change"); 
+       ele.classList.toggle("changed"); 
+       el.classList.toggle("chang"); 
+       ment.classList.toggle("ang"); 
+  }
+     </script>
+</body>
+</html>

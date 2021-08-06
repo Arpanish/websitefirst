@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Poppins", sans- serif;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .nav {
+        padding: 15px;
+      }
+      .line {
+        float: left;
+        margin-left: -30px;
+      }
+       .word {
+        letter-spacing: 1px;
+        line-height: 26.6px;
+        font-weight: 300;
+        font-size: 20px;
+        margin-left: 20px;
+        font-family: "Source Code Pro", monospace;
+      }
+      .fa-caret-right {
+        color: black;
+        font-size: large;
+        float: right;
+      
+        margin-top: -20px;
+        margin-right: 5px;
+        margin-left: 3px;
+      }
+      #aae {
+        color: black;
+        font-size: large;
+        float: right;
+        margin-left: 75px;
+      }
+      .round1 {
+        border-radius: 5px;
+        float: right;
+        margin-left: 640px;
+        display: none;
+      }
+      .firsst {
+        margin-left: 4px;
+        margin-top: -30px;
+        font-size: 16px;
+        font-family: "Cabin", sans-serif;
+        letter-spacing: 1px;
+        background-color: rgb(245, 245, 245);
+        height: 24px;
+        width: 95px;
+        padding-left: 7px;
+        padding-top: 10px;
+        border-radius: 4px;
+      }
+      .nav {
+        background-color:white;
+      }
+      .container {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        top: -5px;
+        z-index: 1;
+      }
+      /* media query of nav */
+      @media only screen and (min-width: 700px) {
+        .bar1 {
+  width: 52px;
+  height: 3px;
+  background-color: black;
+  transition: 0.4s;
+}
+.bar2 {
+  width: 39px;
+  height: 3px;
+  background-color: black;
+  margin-top:10px; 
+  transition: 0.4s;
+}
+.changes .bar1 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(45deg)
+    translate(1px, -4px);
+}
+.changes .bar2 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(-45deg)
+    translate(13px, -7px);
+}
+#container{
+margin-top:-2px;
+} 
+.cross:hover > .bar1 
+{ 
+margin-top:-3px;    
+}
+.cross:hover > .bar2 
+{ 
+margin-top:16px; 
+}
+.cross.changes:hover > .bar1 {
+  margin-top:0px;
+}
+.cross.changes:hover > .bar2 {
+  margin-top:10px;  
+}
+     
+        .word {
+          margin-left: 40px;
+          font-size: 32px;
+        }
+        .round1 {
+          display: inline-block;
+        }
+        h2 {
+          font-size: 40px;
+          padding-left:5450px;
+          padding-right:5450px;
+        }
+        .paragraphfirstt {
+          display:none;
+        }
+        .paragraphfirst {
+          font-size: 24px;
+          line-height: 38px;
+          letter-spacing: 2px;  
+        }
+        .paragraphsecond {
+         display: none;  
+        }
+        .paragraphsecondd {
+          font-size: 24px;
+          line-height: 38px;
+          letter-spacing: 2px; 
+          padding-top: 45px;
+          padding-bottom: 50px; 
+        }
+        .row{
+                    display: flex;
+                    background-color: black;
+                  }
+                  .roww{
+                    display: flex;
+                    background-color: rgb(245, 245, 245);
+                  }
+                  
+                  .col1
+                  {
+                    background-color: black;
+                    width:35%; 
+                    padding:10px;
+                    margin-left: 150px;
+                  }
+                  .col11
+                  {
+                    background-color: black;
+                    width:35%; 
+                    padding:10px;
+                    margin-left: 150px;
+                  }
+                  .col2
+                  {
+                    background-color:black;
+                    padding: 10px;
+                    width:35%;
+                    margin-left: 40px; 
+                    margin-right: 150px;
+                  }
+                  .col22
+                  {
+                    background-color:black;
+                    padding: 10px;
+                    width:35%;
+                    margin-left: 40px; 
+                    margin-right: 150px;
+                  }
+                  h3{
+                    float: left;
+                    letter-spacing: 0.5px;
+                    font-size: 25px;
+                  }
+                  .paragraphrow
+                  {
+                    float:left;
+                    letter-spacing: 0.5px;
+                    font-size: 17px;
+                  }
+                  .paragraphroww
+                  {
+                    float:left;
+                    letter-spacing: 0.5px;
+                    font-size: 17px;
+                  }
+                  .paragraphthird
+                  {
+                    display: none;
+                  }
+                  .paragraphforth
+                  {
+                    display:none;
+                  }    
+      }
+      /* finish */
+      @media only screen and (max-width: 699px) {
+        .paragraphfirst {
+          display: none;
+        }
+        .paragraphsecondd {
+          display: none;
+          }
+          .col1
+          {
+            width:100%;
+            background-color: black;
+          }
+          .paragraphrow
+          {
+            width: 100%;
+            background-color: black;
+          }
+          .col11
+          {
+            width:100%;
+            background-color: black;
+          }
+          .paragraphroww
+          {
+            width: 100%;
+            background-color: black;
+          }
+          .paragraphthirdd{
+            display:none;
+          }
+          .paragraphforthh{
+            display: none;
+          } 
+      }
+     /* finish */
+     @media only screen and (max-width: 850px) {
+       .photo {
+         display: none;
+         }
+      } 
+      @media only screen and (min-width: 850px) {
+       .photoo {
+         display: none;
+       }
+       .photooo{
+         display: none;
+       }
+      }
+      @media only screen and (max-width: 460px){
+        .photoo{
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 750px) {
+        .writtenbox{
+          display: none;
+        }
+        }
+      @media only screen and (min-width: 760px) { 
+        .writtenboxx{
+          display: none;
+        }
+      }
+      h2 {
+        margin-top: 83px;
+        background-color:white;
+        padding-bottom: 18px;
+        padding-top: 18px;
+        padding-left: 18px;
+        padding-right: 18px;
+        letter-spacing: 1px;
+      }
+      .paragraphfirst {
+        text-align: center;
+        letter-spacing: 1px;
+        margin-top: -33px;
+        padding-bottom: 18px;
+        padding-top: 18px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color: white;
+      }
+      .paragraphfirstt {
+        text-align: center;
+        letter-spacing: 1px;
+        margin-top: -25px;
+        padding-bottom: 18px;
+        padding-top: 18px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color:white;
+      }
+      .second
+      {
+        border-bottom: 1px solid black;
+        text-decoration: none;
+        color:black;
+      }
+    
+          .buttonn {
+        border: 2px solid black;
+        padding-left:30px;
+        padding-right:25px;
+        height:50px;
+        text-align:center;
+        border-radius: 5px;
+        font-size:18px;
+        width:150px;
+        background-color:black; 
+        position:relative;
+        margin-top: 50px;
+        }
+        .namee
+        {
+          color:white;
+          top:-2px;
+          font-family: 'Montserrat', sans-serif;
+          font-size:19px;
+          position: absolute;
+          }
+        
+            .aarrowss
+          {
+            font-size:45px;
+            color:rgb(46, 44, 44);
+            top: 8px;
+            position: relative;
+            font-weight: 100;
+            }
+         
+           
+               .buttonnn {
+              border: 2px solid black;
+              padding-left:30px;
+              padding-right:25px;
+              margin-top: 0px;
+              height:45px;
+              text-align:center;
+              border-radius: 5px;
+              font-size:18px;
+              width:137px;
+              background-color:black; 
+              position:relative;
+              margin-left: 90px;
+               }
+              
+             
+                 .arrow
+                 {
+                   font-size:45px;
+                   position: absolute;
+                   color:gray;
+                   top: -20px;
+                   }
+            .big
+            {
+              background-color: rgb(245, 245, 245);
+              margin-top: -28px;
+              z-index: -1;
+              }
+              .imgfirst
+              {
+                width:80%;
+                margin-top: 90px;
+                }
+                 .paragraphsecond
+                {
+                  margin-left: 35px;
+                  margin-right: 35px; 
+                  letter-spacing: 1px;
+                  text-align: center;
+                  padding-bottom: 50px; 
+                  padding-top: 30px; 
+                  } 
+                  .row{
+                    background-color: black;
+                    color:white;
+                    margin-top: -15px;
+                  }
+                  .roww{
+                    background-color: black;
+                    color:white;
+                  }
+                  h3{
+                    letter-spacing: 0.5px;
+                    font-size: 21px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+                  .paragraphrow
+                  {
+                    letter-spacing: 0.5px;
+                    font-size: 15px;
+                    margin-left: 10px;
+                    width: auto;
+                    margin-right: 10px;
+                  } 
+                  .paragraphroww
+                  {
+                    letter-spacing: 0.5px;
+                    font-size: 15px;
+                    margin-left: 10px;
+                    width: auto;
+                    margin-right: 10px;
+                  } 
+                  .division
+                  {
+                    margin-top: -17px;
+                    background-color: black;
+                    padding-bottom: 50px;
+                  }
+                  .up{
+                    color:white;
+                    text-align: center;
+                    font-size: 26px;
+                    letter-spacing: 1px;
+                    padding-top: 65px;
+                    padding-bottom: 35px;
+                  }
+                  .brand
+                  {
+                    color:white;
+                    font-size: 27px;
+                    text-align: center;
+                    padding-top: 30px;
+                  }
+                  h4{
+                    color:white;
+                    text-align: center;
+                    font-size: 22px;
+                    letter-spacing: 1.5px;
+                  }
+                  .paragraphthird{
+                    color:white;
+                    text-align: center;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    letter-spacing: 0.5px;
+                  }
+                  .paragraphthirdd{
+                    color:white;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    font-size: 20px;
+                    line-height: 35px;
+                  }
+                  .paragraphforth{
+                    text-align: center;
+                    color:black;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 35px;
+                    padding-bottom: 50px;
+                    font-size: 25px;
+                    letter-spacing: 1px;
+                    background-color: rgb(245, 245, 245);
+                  }
+                  .paragraphforthh{
+                    text-align: center;
+                    color:black;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 35px;
+                    padding-bottom:50px;
+                    font-size: 35px;
+                    letter-spacing: 1px;
+                    background-color:rgb(245, 245, 245);
+                  }
+                  .Row{
+                    display: flex;
+                    width: 100%;
+                  }
+                  .Row img{
+                    padding: 0px 25px;
+                 } 
+                  .picture1{
+                   margin-left: auto;
+                 } 
+                 .picture2{ 
+                   margin-top: 15px;
+                 } 
+                  .picture3{
+                   margin-right: auto;
+                   margin-top: 15px;
+                  }
+                  .Roww{
+                    display: flex;
+                  }
+                  .Rowww{
+                    display: flex; 
+                  }
+                  .Rowwww{
+                    display: inline-block; 
+                  }
+                  .Roww img{
+                    padding: 0px 25px;
+                 } 
+                 .picture111{
+                   margin-left: auto;
+                   margin-right: auto;
+                 }
+                  .picture11{
+                   margin-left: auto;
+                 } 
+                 .picture22{ 
+                   margin-top: 5px;
+                   margin-right: auto;
+                 } 
+                 .photo{
+                   background-color: rgb(245, 245, 245);
+                 }
+                 .photoo{
+                   background-color: rgb(245, 245, 245);
+                 }
+                 .photooo{
+                   background-color: rgb(245, 245, 245);
+                 }
+                 .blank{
+                   padding:170px;
+                   background-color: rgb(245, 245, 245);
+                 }
+                 .writtenbox{
+                   background-color: black;
+                   color: white;
+                   padding:55px 150px;
+                    width: 450px; 
+                   margin-left:auto ;
+                   margin-right:auto;
+                   margin-top: -250px;
+                 }
+                 .writtenparagraph{
+                   font-size: 23px;
+                   text-align: center;
+                   letter-spacing: 0.5px;
+                   line-height: 40px;
+                 }
+                 .writtenname{
+                   letter-spacing: 0.5px;
+                   font-size: 28px;
+                   text-align: center;
+                 }
+                 .writtennamee{
+                   text-align: center;
+                   font-size: 19px;
+                   letter-spacing: 0.5px;
+                   margin-top: -28px;
+                 }
+                 .writtenboxx{
+                  background-color: black;
+                  color: white;
+                  padding:45px 50px;
+                  margin-top: -250px;
+                 }
+                 .writtenparagraphh{
+                   text-align: center;
+                   letter-spacing: 0.5px;
+                 }
+                 .writtennamme{
+                   text-align: center;
+                   letter-spacing: 0.5px;
+                 }
+                 .writtennammee{
+                   text-align: center;
+                   letter-spacing: 0.5px;
+                 }
+                 .lastpart{
+                   background-color: white;
+                   color: black;
+                   padding-bottom: 85px;
+                 }
+                 .latestnews{
+                   text-align: center;
+                   padding-top: 35px;
+                   letter-spacing: 1.5px;
+                   font-size: 20px;
+                 }
+                 .link
+                 {
+                   letter-spacing: 1px;
+                   margin-left: 15px;
+                 }
+                 .downn
+                 {
+                   border: solid black;
+                   transform: rotate(-45deg);
+                   border-width: 0 2px 2px 0;
+                   margin-top:-30px;
+                   padding: 3px;
+                   float:right;
+                   margin-right: 15px;
+                   }
+                   .hrf{
+                     border-top: 1px rigid;
+                     margin:10px 15px;
+                     opacity: 0.3;
+                   }
+                   .hrsecond{
+                   border-top: 1px rigid;
+                   width: 61%;
+                   margin:10px auto;
+                   opacity: 0.3;
+                 }
+                   .linkk
+                 {
+                   letter-spacing: 1px;
+                 }
+                 .downnn
+                 {
+                   border: solid black;
+                   transform: rotate(-45deg);
+                   border-width: 0 2px 2px 0;
+                   margin-top:-30px;
+                   padding: 3px;
+                   float:right;
+                   }
+                   .link_caption{
+                     width:100%;
+                   }
+                   .link_captionn{
+                     width:60%;
+                     margin-left: auto;
+                     margin-right: auto;
+                   }
+                   .latestnewss{
+                     letter-spacing: 2px;
+                     text-align: center;
+                     font-size: 40px;
+                   }
+                   @media only screen and (min-width: 800px) {
+                     .link_caption{
+                       display: none;
+                     }
+                     .latestnews{
+                       display: none;
+                     }
+                     }
+                     @media only screen and (max-width: 799px) {
+                       .link_captionn{
+                         display: none;
+                       }
+                       .hrsecond{
+                         display: none;
+                       }
+                       .latestnewss{
+                         display: none;
+                       }
+                     }
+                     .lastpic
+                     {
+                       width:80%;
+                       margin-top: -150px;  
+                     }
+                     .lastclass{
+                       background-color: rgb(245, 245, 245);
+                       margin-top: 150px;  
+                     }
+                     .together{
+                       text-align: center;
+                       letter-spacing: 1px;
+                       font-size: 27px;
+                       line-height: 45px;
+                     }
+                     .small{
+                       width: 720px;
+                       margin-left: auto;
+                       margin-right: auto;
+                     }
+                     .smalll{
+                       width: 70%;
+                       margin-left: auto;
+                       margin-right: auto;
+                     }
+                     .togetherr{
+                       text-align: center;
+                       letter-spacing: 0.5px;
+                     }
+                     @media only screen and (max-width: 820px) {
+                       .small{
+                         display:none;
+                       }
+                       .wee{
+                         display: none;
+                       }
+                     }
+                     @media only screen and (min-width: 820px) {
+                       .smalll{
+                         display:none;
+                       }
+                       .we{
+                         display: none;
+                       }
+                     }
+                     .we{
+                       width:45%;
+                       margin-left: auto;
+                       margin-right: auto;
+                       font-size: 25px;
+                       letter-spacing: 1px;
+                       text-align: center;
+                       padding-top: 20px;
+                     } 
+                     .wee{
+                       width:28%;
+                       margin-left: auto;
+                       margin-right: auto;
+                       font-size: 30px;
+                       letter-spacing: 1px;
+                       text-align: center;
+                       padding-top: 25px;
+                     }
+                     .hsix{
+                       width:370px;
+                       margin-left: auto;
+                       margin-right: auto;
+                     }
+                     .connect{
+                       text-decoration: none;
+                       letter-spacing: 1px;
+                       font-size: 18px;
+                       color:black;
+                       line-height: 14px;
+                       text-align: center;
+                       font-weight: bold;
+                     }
+                     .hh{
+                       width:320px;
+                       margin-left: auto;
+                       margin-right: auto;
+                     }
+                     .connectt{
+                       text-decoration: none;
+                       letter-spacing: 0.5px;
+                       color:black;
+                       line-height: 10px;
+                       font-weight: bold;
+                     }
+                     @media only screen and (min-width: 910px) {
+                       .hh{
+                         display: none;
+                       }
+                     }
+                       @media only screen and (max-width: 910px) {
+                         .hsix{
+                           display: none;
+                         }
+                     }
+                     @media only screen and (max-width: 950px) {
+                       .lastt{
+                         display: none;
+                       }
+                     }
+                     @media only screen and (min-width: 951px) {
+                       .last{
+                         display: none;
+                       }
+                     }
+                         .last {
+                           background-color: black;
+                           color: white;
+                         
+                           }
+                           .forbes
+                           {
+                             font-size: 45px; 
+                             padding-top: 43px;
+                             color:white;
+                             letter-spacing: 0px;
+                             text-align: center;
+                             }
+                             .top {
+                               margin-top: -20px;
+                               }
+                               .group{
+                                 text-align: center;
+                                 display: block;  
+                                 padding:2px;
+                                 color:white;
+                                 font-size: 15px; 
+                                 }
+                                 .lastt {
+                           background-color: black;
+                           color: white;
+                           margin-top: 50px;
+                           }
+                           .forbess
+                           {
+                             font-size: 45px; 
+                             padding-top: 43px;
+                             color:white;
+                             letter-spacing: 0px;
+                             float: left; 
+                             margin-top: -35px; 
+                             }
+                             .topp {
+                               margin-top: -20px;
+                               padding-top: 70px;
+                               padding-bottom: 30px;
+                               width:45%;
+                               margin-left: auto;
+                               margin-right: auto; 
+                               }
+                               .groupp{
+                                 text-align: center; 
+                                 display: block;  
+                                 padding:2px;
+                                 color:white;
+                                 font-size: 15px; 
+                                 }
+                                 .faq{
+                                   text-align: center;
+                                   font-weight: bold;
+                                   font-size: 30px;
+                                   padding-bottom: 20px;
+                                   padding-top: 10px;
+                                 }
+                                 @media only screen and (max-width: 480px) {
+                                   .portion{
+                                     display: none;
+                                   }
+                                 }
+                                 @media only screen and (min-width: 480px) {
+                                   .portionn{
+                                     display: none;
+                                   }
+                                 }
+                                
+                                 .collapsible {
+                                   background-color: rgb(245, 245, 245);
+                                   color: black;
+                                   cursor: pointer;
+                                   padding: 18px;
+                                   width: 100%;
+                                   border: none;
+                                   text-align: left;
+                                   outline: none;
+                                   font-size: 16px;
+                                   }
+                                   .collapsiblee {
+                                   background-color: rgb(245, 245, 245);
+                                   color: black;
+                                   cursor: pointer;
+                                   padding: 18px;
+                                  
+                                   border: none;
+                                   text-align: left;
+                                   outline: none;
+                                   font-size: 15px;
+                                   }
+                                   .look{
+                                     font-size: 14px;
+                                     background-color: rgb(245, 245, 245);
+                                   }
+.collapsible:after {
+  content: '⌄';
+  font-size:35px;
+  color: black; 
+  float: right;
+  margin-left: 15px;
+  margin-top:-20px;
+}
+.collapsiblee:after {
+  content: '⌄';
+  font-size:35px;
+  color: black; 
+  float: right;
+   margin-left: 130px; 
+  
+  margin-top:-20px;
+}
+
+.active:after {
+  content: "⌃";
+  margin-top:0px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgb(245, 245, 245);
+  border-bottom: 1px ridge rgb(209, 204, 206);
+}
+.portion{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:rgb(245, 245, 245);
+  padding-bottom: 80px;
+}
+.portionn{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:rgb(245, 245, 245);
+  padding-bottom: 80px;
+  margin-top: -30px;
+}
+            .arrowsss
+          {
+            font-size:35px;
+            color:gray;
+            top: -20px;
+            }
+            .atlast{
+                 width:91%;
+                 margin-left: auto;
+                 margin-right: auto;
+                 padding-top: 50px;
+               }
+               .acc{
+                 text-decoration: none;
+                 color:black;
+                 font-weight: bold;
+                 letter-spacing: 1px;
+                 font-size: 30px;
+                 width:300px;  
+               }
+               .head{
+                 font-size: 14.5px;
+                 width:330px;
+               } 
+               
+               .footer
+{
+  color:rgb(185, 185, 185);
+  font-weight:300;
+  letter-spacing:0.5px;
+  font-size:12px;
+ 
+  margin-top:20px;
+}
+.Privacy
+{
+   color:rgb(185, 185, 185);
+  text-decoration:underline;
+}
+
+                   .bar1 {
+  width: 52px;
+  height: 3px;
+  background-color: black;
+  transition: 0.4s;
+}
+.bar2 {
+  width: 39px;
+  height: 3px;
+  background-color: black;
+  margin-top:10px; 
+  transition: 0.4s;
+}
+.changes .bar1 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(45deg)
+    translate(1px, -4px);
+}
+.changes .bar2 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(-45deg)
+    translate(13px, -7px);
+}
+#container{
+margin-top:-2px;
+} 
+.cross:hover > .bar1 
+{ 
+margin-top:-3px;    
+}
+.cross:hover > .bar2 
+{ 
+margin-top:16px; 
+}
+.cross.changes:hover > .bar1 {
+  margin-top:0px;
+}
+.cross.changes:hover > .bar2 {
+  margin-top:10px;  
+}
+ .left{
+
+  text-align: center;
+  display: none;
+} 
+.change .left{
+  display: inline-block;
+  
+  position: fixed;
+  margin: 0px;
+}
+
+.firstt{
+          width:420px; 
+          font-size: 45px;
+          font-family:Arial, Helvetica, sans-serif;
+          margin-top: 15px;
+          letter-spacing: 1px;
+          text-align: left;
+          color:black;
+      }
+      hr{
+          margin-top: -33px;
+          width: 400px;
+          color: rgb(245, 245, 245);
+      }
+      .and{
+          position:fixed;
+          width: 100%;
+          margin-left: auto;
+          margin-right:auto;
+          margin-top: 100px;
+          
+      } 
+      @media only screen and (max-width: 850px){
+          .firstt{
+              font-size: 33px;
+              letter-spacing: 1px;
+              margin-top: 15px;
+          }
+          hr{
+              margin-top: -21px;
+          }
+      }
+      @media only screen and (max-width: 550px){
+          .firstt{
+              font-size: 20px;
+              letter-spacing: 1px;
+              margin-top: 15px;
+          }
+          hr{
+              margin-top: -15px;
+              width:420px;
+          }
+      }
+      .last{
+          padding-top:0px;
+          margin-top: 40px;
+      }
+     
+      .chan {
+          display: none; 
+      }
+      .chann{
+          display: none;
+      }
+      .box{
+        margin-left: 15px;
+        width:500px;
+        color:black;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        font-size: 16px;
+        position: relative;
+        top:5px;
+        text-decoration: none;
+      }
+      .rou{
+        background-color: rgb(245, 245, 245);
+        width:100px;
+        height: 35px;
+        color:black;
+        margin-top: -24px;
+      
+        float:right;
+        margin-right: 12px;
+        border-radius: 5px;
+      }
+      @media only screen and (max-width:700px){
+         .rou{
+          display: none;
+        } 
+      }
+      @media only screen and (min-width:701px){
+         .link{
+          display: none;
+        }
+      }
+
+
+
+
+
+
+
+      .button {
+        border: 2px solid black;
+        padding-left:30px;
+        padding-right:25px;
+        height:50px;
+        text-align:center;
+        border-radius: 5px;
+        font-size:18px;
+        width:170px;
+        background-color:black; 
+        position:relative;
+        margin-top: 50px;
+        }
+        .name
+        {
+          color:white;
+          top:12px;
+          font-family: 'Montserrat', sans-serif;
+          font-size:19px;
+          position: relative;
+          text-decoration: none;
+          margin-left: -35px;
+         
+          }
+          .arrowss
+          {
+            font-size:45px;
+            position: absolute;
+            color:gray;
+            top: -20px;
+            margin-left: 5px;
+            }
+
+
+
+
+                   .buuttonn {
+        border: 2px solid black;
+        padding-left:15px;
+        padding-right:20px;
+        height:50px;
+        text-align:center;
+        border-radius: 5px;
+        font-size:18px;
+        width:170px;
+        background-color:white; 
+        position:relative;
+        margin-top: 50px;
+        }
+        .nammee
+               {
+                 color:black;
+                 top:-5px;
+                 font-family: 'Montserrat', sans-serif;
+                 font-size:19px;
+                 position: relative;
+                 text-decoration: none;
+                 margin-left: -35px;
+                 
+                 top: 10px;
+                 }
+                 .arrrow
+                 {
+                   font-size:45px;
+                   position: absolute; 
+                   color:gray;
+                   top: -20px;
+                   }
+
+
+
+
+
+                   .buttonn {
+              border: 2px solid black;
+              padding-left:30px;
+              padding-right:25px;
+              margin-top: 0px;
+              height:51px;
+              text-align:center;
+              border-radius: 5px;
+              font-size:18px;
+              width:137px;
+              background-color:black; 
+              position:relative;
+               }
+             
+              
+               .namee
+               {
+                 color:white;
+                 font-family: 'Montserrat', sans-serif;
+                 font-size:19px;
+                 position: relative;
+                 text-decoration: none;
+                 margin-left: -35px;
+                 text-decoration: none;
+                 top: 10px;
+
+                 }
+                
+
+
+                 .border{
+                  border: 2px solid black;
+              padding-left:30px;
+              padding-right:25px;
+              margin-top: 0px;
+              height:41px;
+              text-align:center;
+              border-radius: 5px;
+              font-size:18px;
+              width:107px;
+              background-color:black; 
+              position:relative;
+               }
+               .write{
+                color:white;
+                 font-family: 'Montserrat', sans-serif;
+                 font-size:19px;
+                 position: relative;
+                 text-decoration: none;
+                 margin-left: -42px;
+                 text-decoration: none;
+                 top:5px;
+               }
+               .arey{
+                 color: white;
+                 font-size:45px;
+                   position: absolute; 
+                   
+                   top: -22px;
+               }
+
+
+
+
+
+
+
+               .our-latest-news
+      {
+          background-color: white; 
+          margin-top: -19px; 
+      }
+      .latest{
+          color:black;
+          padding-top:40px;
+          padding-bottom: 5px;
+          text-align: center;
+          font-size: 22px;
+          letter-spacing: 1px;
+          font-weight: 300;
+          margin-top:10px;
+      }
+      .news{
+          color:black;
+          font-size: 16px;
+          margin-left:15px;
+          text-decoration: none;
+          letter-spacing: 1px;
+         
+      }
+      .right {
+        border: solid black;
+          border-width: 0 2px 2px 0;
+          display: inline-block;
+          padding: 3px; 
+          transform: rotate(-45deg); 
+          float: right;   
+          margin-right:15px;
+          margin-top: 12px;
+          }
+          .hrs{
+            border-top: 1px solid black;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top:15px;
+          }
+          .white
+          {
+            margin-top:-22px;
+            padding-top: 10px;
+          }
+ .half
+          {
+             padding:40px; 
+            margin-top: -10px;
+            
+            }
+
+
+
+
+
+
+            .our-latest-newss
+      {
+          background-color: white; 
+          margin-top: -19px; 
+      }
+      .latests{
+          color:black;
+          padding-top:40px;
+          padding-bottom: 5px;
+          text-align: center;
+          font-size: 30px;
+          letter-spacing: 1px;
+          font-weight: 300;
+          margin-top:10px;
+      }
+      .newss{
+          color:black;
+          font-size: 16px;
+          margin-left:15px;
+          text-decoration: none;
+          letter-spacing: 1px;
+         
+      }
+      .rights {
+        border: solid black;
+          border-width: 0 2px 2px 0;
+          display: inline-block;
+          padding: 3px; 
+          transform: rotate(-45deg); 
+          float: right;   
+          margin-right:15px;
+          margin-top: 12px;
+          }
+          .hrss{
+            border-top: 1px solid black;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top:15px; 
+          }
+          .whites
+          {
+            margin-top:-22px;
+            padding-top: 10px;
+            /* background-color: brown; */
+            width:500px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+ .halfs
+          {
+             padding:40px; 
+            margin-top: -10px;
+          }
+          /* .likes{
+            background-color: blue;
+          } */
+
+           @media only screen and (min-width:700px){
+            .like{
+              display: none;
+            }
+          } 
+          @media only screen and (max-width:699px){
+            .likes{
+              display: none;
+            }
+          } 
+          .accdd{
+            text-decoration: none;
+            color: black;
+          }
+
+
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li class="line">
+             <a id="container" class = "cross" onclick="myFunction()" href="#">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+             </a>
+            
+             <a id="whole" class="first" href="#">
+              <div class="left">
+                <div class="and">
+                  <center> <p class="firstt">World Media Group</p>
+                   <hr>
+                   <p class="firstt">World Accelerator</p>
+                   <hr>
+                   <p class="firstt">World Media Group</p>
+                   <hr>
+                   <p class="firstt">News</p>
+                   <hr>
+                   <p class="firstt">Contact Us</p>
+                   <hr></center>
+                  </div>
+                  <div class="last"></div>
+          
+                </div>
+              </a>
+          </li>
+          <div class="all" id="alls">
+            <li class="word" ><a class="accdd" href="demo.html">World Accelerator</a></li>
+          <li class="link">
+            <i class="fa fa-caret-right"></i>
+          </li>
+         
+            <li class="rou">
+            <a class="box" href="world.html">
+              <b>World</b>
+              <i id="aae" class="fa fa-caret-right"></i>
+            </a>
+          </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div id="pho" class="no">
+        <br><br><br><br>
+     
+        <h2>
+        <center>We love helping<br>
+             entrepreneurs succeed<br>
+              and businesses grow</center>
+      </h2> 
+       <p class="paragraphfirstt">
+        <strong>We seek companies leveraging technology to transform their industries in
+        meaningful ways.<br><br>
+        We are equally excited deploying emerging technologies, such as the
+        blockchain, as we are using existing technologies in novel ways.<br><br>
+        We also have access to some of the world’s most brandable domain assets.
+        We strive to combine World Media Group’s <a class="second" href="#">premium domain names</a> with
+        talented teams that bring passion, creativity,<br> and expertise, and share
+        our common interest in advancing the world we live in.</strong>
+      </p>
+      <p class="paragraphfirst">
+        <strong>We seek companies leveraging technology to<br> transform their industries in
+        meaningful ways.<br><br>
+        We are equally excited deploying emerging<br> technologies, such as the
+        blockchain, as we are <br>using existing technologies in novel ways.<br><br>
+        We also have access to some of the world’s most<br> brandable domain assets.
+        We strive to combine<br> World Media Group’s <a class="second" href="#">premium domain names</a> <br>with
+        talented teams that bring passion, creativity,<br> and expertise, and share
+        our common interest in<br> advancing the world we live in.</strong>
+      </p> 
+      
+      <center><div class="button">
+        <a class="name" href="premium.html"><b>Permium Names</b>
+       <span class="arrowss">&#8594;</span>
+        </a>
+      </div>
+      </center>
+
+
+      <div class="big"><center>
+        <img class="imgfirst" src="https://www.world.com/wp-content/uploads/2020/06/man-new.jpg">
+        <p class="paragraphsecond"><strong>World Accelerator offers a unique opportunity to build a thriving business on the foundation of a premium domain name. We are seeking
+          energetic and innovative teams interested in
+          utilizing our premier domains to their fullest
+          advantage. In addition, we bring a wealth of
+          experience scaling companies. We help our
+          companies across all areas of their business
+          where needed most ranging from capital
+          strategy, team building, networking, operational
+          expertise, exit strategy and general mentorship.width:50%;
+          We also invest where we see opportunities
+          to accelerate growth.</strong>
+          </p>
+          <p class="paragraphsecondd"><strong>World Accelerator offers a unique opportunity<br>
+            to build a thriving business on the foundation<br>
+            of a premium domain name. We are seeking<br>
+            energetic and innovative teams interested in<br>
+            utilizing our premier domains to their fullest<br>
+            advantage. In addition, we bring a wealth of<br>
+            experience scaling companies. We help our<br>
+            companies across all areas of their business<br>
+            where needed most ranging from capital<br>
+            strategy, team building, networking, operational<br>
+            expertise, exit strategy and general mentorship.<br>
+            We also invest where we see opportunities<br>
+            to accelerate growth.</strong>
+            </p> </center> 
+      
+     <div class="division">
+       <div class="up"><strong>What we offer</strong></div>
+      <div class="row">
+        <div class="col1">
+          <h3>Launch to public</h3>
+          <p class="paragraphrow"><strong> know what it takes to start from scratch and also to run a public company because we have done it.</strong></p>
+        </div>
+        <div class="col2">
+          <h3>Capital expertise</h3>
+          <p class="paragraphrow"><strong>We have raised over $250 million
+            of start-up growth capital and over
+            $1 billion of later stage capital for our
+            own and other companies.</strong></p>
+        </div>
+      </div>
+      <div class="roww">
+        <div class="col11">
+          <h3>Team building</h3>
+          <p class="paragraphroww"><strong> We go deep to help our companies
+            foster the right culture, find talent
+            from our broad networks, and
+            proactively build for scale.</strong></p>
+        </div>
+        <div class="col22">
+          <h3>Investor management</h3>
+          <p class="paragraphroww"><strong>We understand how to pitch
+            investors and structure deals that
+            work for all parties.</strong></p>
+        </div>
+      </div>
+      <div class="brand">Brand</div>
+      <h4><strong>The strength of the right domain</strong></h4>
+      <div class="paragraphthird">World Accelerator offers valuable ‘properties’ 
+        in the form of exclusive branded domain names. With a premium brand you 
+        open more doors, improve conversions, improve retention, and accelerate your business.</div>
+        <div class="paragraphthirdd"> World Accelerator offers valuable ‘properties’ in the form of exclusive<br>
+          branded domain names. With a premium brand you open more doors,<br>
+          improve conversions, improve retention, and accelerate your business.</div>
+        
+
+          <center><div class="buuttonn">
+            <a  class="nammee" href="premium.html"><b>Permium Names</b>
+           <span class="arrrow">&#8594;</span>
+            </a>
+          </div>
+          </center>
+          
+      </div>
+
+
+
+
+
+
+      <div class="paragraphforth"><strong>Meet companies being developed by us and our partners</strong>
+      </div>
+      <div class="paragraphforthh"><strong>Meet companies being<br> developed by us and<br> our partners</strong>
+      </div>
+      </div>
+
+
+      <div class="photo">
+        <div class="Row">
+          <div class="picture1">
+            <img src="https://www.world.com/wp-content/uploads/2020/06/doctor.png" width="290">
+          </div>
+          <div class="picture2">
+           <img src="https://www.world.com/wp-content/uploads/2020/06/Lawyer.com_.png" width="260">
+          </div>
+          <div class="picture3">
+           <img src="https://www.world.com/wp-content/uploads/2020/06/india.png" width="150">
+          </div>
+        </div>  
+        
+   <br><br>
+        <div class="Row">
+         <div class="picture1">
+           <img src="https://www.world.com/wp-content/uploads/2020/06/sweet.png" width="150">
+         </div>
+         <div class="picture2">
+          <img src="https://www.world.com/wp-content/uploads/2020/06/calender.png" width="260" style="margin-top: -7px;">
+         </div>
+         <div class="picture3">
+          <img src="https://www.world.com/wp-content/uploads/2020/06/scientist.png" width="290" style="margin-top: 3px;">
+         </div>
+       </div>  
+   
+   
+       <br><br>
+        <div class="Row">
+         <div class="picture1">
+           <img src="https://www.world.com/wp-content/uploads/2020/06/outerspace.png" width="220" style="margin-top: 13px; margin-left: -75px;">
+         </div>
+         <div class="picture2">
+          <img src="https://www.world.com/wp-content/uploads/2020/06/usa.png" width="195" >
+         </div>
+         <div class="picture3">
+          <img src="https://www.world.com/wp-content/uploads/2020/06/edibles.png" width="240" >
+         </div>
+       </div>  
+        </div>
+
+
+        <div class="photoo">
+            <div class="Roww">
+              <div class="picture11">
+                <img src="https://www.world.com/wp-content/uploads/2020/06/doctor.png" width="150">
+              </div>
+              <div class="picture22">
+               <img src="https://www.world.com/wp-content/uploads/2020/06/Lawyer.com_.png" width="150">
+              </div>
+              
+            </div> 
+            <br>
+            <div class="Roww">
+              <div class="picture11">
+                <img src="https://www.world.com/wp-content/uploads/2020/06/india.png" width="120" style=" margin-left: -50px;">
+              </div>
+              <div class="picture22">
+               <img src="https://www.world.com/wp-content/uploads/2020/06/sweet.png" width="100" style=" margin-top: -15px;">
+              </div>
+            </div>
+            <br>
+            <div class="Roww">
+              <div class="picture11">
+                <img src="https://www.world.com/wp-content/uploads/2020/06/calender.png" width="155" style=" margin-top: -3px;">
+              </div>
+              <div class="picture22">
+               <img src="https://www.world.com/wp-content/uploads/2020/06/scientist.png" width="160" style=" margin-top: 0px;">
+              </div>
+            </div>
+
+
+            <br>
+            <div class="Roww">
+              <div class="picture11">
+                <img src="https://www.world.com/wp-content/uploads/2020/06/outerspace.png" width="155" style=" margin-top: 7px;">
+              </div>
+              <div class="picture22">
+               <img src="https://www.world.com/wp-content/uploads/2020/06/usa.png" width="160" style=" margin-top: 0px;">
+              </div>
+            </div>
+            <br>
+            <div class="Rowww">
+              <div class="picture111">
+                <img src="https://www.world.com/wp-content/uploads/2020/06/edibles.png" width="155">
+              </div>
+              </div>
+              </div>
+              <div class="photooo"><center>
+               <div class="Rowwww">
+                <div class="picture1111">
+                  <img src="https://www.world.com/wp-content/uploads/2020/06/doctor.png" width="175">
+                </div><br>
+                <div class="picture1111">
+                  <img src="https://www.world.com/wp-content/uploads/2020/06/Lawyer.com_.png" width="165">
+                </div><br>
+                <div class="picture1111">
+                  <img src="https://www.world.com/wp-content/uploads/2020/06/india.png" width="135">
+                </div><br>
+                <div class="picture1111">
+                  <img src="https://www.world.com/wp-content/uploads/2020/06/sweet.png" width="145">
+                </div><br>
+                <div class="picture1111">
+                  <img src="https://www.world.com/wp-content/uploads/2020/06/calender.png" width="165">
+                </div><br>
+                <div class="picture1111">
+                  <img src="https://www.world.com/wp-content/uploads/2020/06/scientist.png" width="175">
+                </div><br>
+                <div class="picture1111">
+                  <img src="https://www.world.com/wp-content/uploads/2020/06/outerspace.png" width="155">
+                </div><br>
+                <div class="picture1111">
+                  <img src="https://www.world.com/wp-content/uploads/2020/06/usa.png" width="155">
+                </div><br>
+                <div class="picture1111">
+                  <img src="https://www.world.com/wp-content/uploads/2020/06/edibles.png" width="145">
+      
+                </div>
+              </div> 
+              </div></center>
+
+              <div class="blank"></div>
+        <div class="writtenbox">
+          <p class="writtenparagraph">
+            “Working with World Accelerator has allowed
+            us to stay a step ahead on key decisions around
+            capital and growth. Launching at Doctor.com gives
+            our platform an edge in the market to deploy our
+            award-winning technology”
+          </p>
+          <p class="writtenname"><strong>~ Andrei Zimiles</strong></p>
+          <p class="writtennamee"><strong>CEO & Co-Founder, Doctor.com</strong></p>
+        </div>
+
+        <div class="writtenboxx">
+            <p class="writtenparagraphh">
+              “Working with World Accelerator has allowed
+              us to stay a step ahead on key decisions around
+              capital and growth. Launching at Doctor.com gives
+              our platform an edge in the market to deploy our
+              award-winning technology”
+            </p>
+            <p class="writtennamme"><strong>~ Andrei Zimiles</strong></p>
+            <p class="writtennammee"><strong>CEO & Co-Founder, Doctor.com</strong></p>
+          </div>
+
+
+
+
+
+<div class="like">
+          <div class="our-latest-news">
+            <p class="latest">Our latest news</p>
+          
+        </div>
+        <div class="white">
+        <a class="news" href="#">News
+            <i class="right"></i></a>
+            <div class="hrs"></div>
+            <p class="latest">See job opportunities</p>
+            <a class="news" href="#">Doctor.com
+              <i class="right"></i></a>
+              <div class="hrs"></div><br>
+              <a class="news" href="#">Lawyer.com
+                <i class="right"></i></a>
+                <div class="hrs"></div><br>
+                <a class="news" href="#">Scientist.com
+                  <i class="right"></i></a>
+                  <div class="hrs"></div>
+                  </div>
+  <div class="half"></div>
+</div>
+
+
+<div class="likes">
+  <div class="our-latest-newss">
+    <p class="latests">Our latest news</p>
+  
+</div>
+<div class="whites">
+<a class="newss" href="#">News
+    <i class="rights"></i></a>
+    <div class="hrss"></div>
+    <p class="latests">See job opportunities</p>
+    <a class="newss" href="#">Doctor.com
+      <i class="rights"></i></a>
+      <div class="hrss"></div><br>
+      <a class="newss" href="#">Lawyer.com
+        <i class="rights"></i></a>
+        <div class="hrss"></div><br>
+        <a class="newss" href="#">Scientist.com
+          <i class="rights"></i></a>
+          <div class="hrss"></div>
+          </div>
+<div class="halfs"></div>
+</div>
+<!-- 
+          <div class="lastpart">
+            <p class="latestnews"><strong>Our Latest News</strong></p>
+            <div class="link_caption">
+              <p class="link"><strong></strong>News</p>
+              
+              <div class="link_icon">
+                <p class="downn"></p>
+                <hr class="hrfirst">
+            </div>
+          </div>     
+          <p class="latestnewss">Our Latest News</p>
+          <div class="link_captionn">
+              <p class="linkn"><strong></strong>News</p>
+              
+              <div class="link_iconn">
+                <p class="downnn"></p>  
+            </div>
+          </div>
+          <hr class="hrsecond"> 
+        <p class="latestnewss">See job opportunities</p>
+        <div class="link_captionn">
+            <p class="linkn"><strong></strong>Doctor.com</p>  
+            <div class="link_iconn">
+              <p class="downnn"></p>  
+          </div>
+        </div>
+        <hr class="hrsecond"> 
+
+        <div class="link_captionn">
+          <p class="linkn"><strong></strong>Lawyer.com</p>
+          
+          <div class="link_iconn">
+            <p class="downnn"></p>  
+        </div>
+      </div>
+      <hr class="hrsecond"> 
+
+      <div class="link_captionn">
+        <p class="linkn"><strong></strong>Scientist.com</p>
+        
+        <div class="link_iconn">
+          <p class="downnn"></p>  
+      </div>
+    </div>
+    <hr class="hrsecond"> 
+    <p class="latestnews"><strong>See job opportunities</strong></p>
+    <div class="link_caption">
+      <p class="link">Doctor.com</p>
+      <div class="link_icon">
+        <p class="downn"></p>
+        <hr class="hrfirst">
+    </div>
+    <p class="link">Lawyer.com</p>
+    <div class="link_icon">
+      <p class="downn"></p>
+      <hr class="hrfirst">
+  </div>
+  <p class="link">Scientist.com</p>
+    <div class="link_icon">
+      <p class="downn"></p>
+      <hr class="hrfirst">
+  </div>
+</div> 
+</div> -->
+
+
+
+
+<div class="lastclass">
+    <center><img class="lastpic" src="https://www.world.com/wp-content/uploads/2020/06/latest.jpg"></center>
+    <div class="small">
+    <p class="together">Together, we leverage our diverse skills, expertise,
+     and capital to create companies that matter.
+     </p>
+     </div>
+     <div class="smalll">
+        <p class="togetherr">Together, we leverage our diverse skills, expertise,
+         and capital to create companies that matter.
+         </p>
+         </div>
+
+         <p class="we"><strong>We want to
+            talk with you</strong></p>
+            <p class="wee"><strong>We want to
+              talk with you</strong></p>
+              <div class="hsix"><a class="connect" href="#">Connect with Gary Millin (CEO, World
+                Accelerator) on Linkedln
+                <span class="aarrowss">&#8594;</span>
+              </a><p class="or"><strong><center>or</center></strong></p></div>
+              <div class="hh">
+              <a class="connectt" href="https://www.linkedin.com/in/gmillin">Connect with Gary Millin (CEO, World
+                Accelerator) on Linkedln
+                <span class="aarrowss">&#8594;</span>
+              </a>
+              <p class="or"><strong><center>or</center></strong></p>
+              </div>
+            
+
+              <center><div class="buttonn">
+                <a class="namee" href="contact.html"><b>Apply Here</b>
+               <span class="arrowss">&#8594;</span>
+                </a>
+              </div>
+              </center>
+
+
+
+              <!-- </div> -->
+
+
+
+
+              <div class="last">
+                <p class="forbes">Forbes</p>
+                <div class="top">
+                <a class="group" href="#">Gary Millin, CEO World Accelerator</a>
+                <a class="group" href="#">discusses the power of `branded</a>
+                <a class="group" href="#">domains` and other business tips</a>
+                <br><br></center>
+                </div>
+                </div>
+
+                <div class="lastt">
+                    <div class="forbesdiv">
+                    </div>
+                    <div class="topp">
+                      <p class="forbess">Forbes</p>
+                    <a class="groupp" href="#">Gary Millin, CEO World Accelerator</a>
+                    <a class="groupp" href="#">discusses the power of `branded</a>
+                    <a class="groupp" href="#">domains` and other business tips</a>
+                    <br><br></center>
+                    </div>
+                    </div>
+
+                    <p class="faq">FAQ</p>
+                        <div class="portion">
+<button class="collapsible">What is World Accelerator?</button>
+<div class="content">
+  <p class="look">World Accelerator is the first ever Domain Accelerator and gives
+     entrepreneurs the opportunity to develop a business based on prime 
+     Internet real estate. Over the last ten years, the cost and time needed
+      to bring exciting and disruptive businesses to market has dramatically 
+      compressed. However, building credibility with customers, partners and 
+      your brand still takes time. World Accelerator changes this paradigm, 
+      turning it upside down as companies can now start with a powerful existing 
+      brand on day one.</p>
+</div>
+<button class="collapsible">Where is World Accelerator located?</button>
+<div class="content">
+  <p class="look">World Accelerator is a global platform. While we are based in midtown 
+    New York our teams and affiliated companies are headquartered all around 
+    the world. Please reach us via our Contact Us form.</p>
+</div>
+<button class="collapsible">What do you look for in a World Accelerator applicant?</button>
+<div class="content">
+  <p class="look">We look for focus, passion, and a team’s knowledge of their market. We also look for
+     agile development experience. You must be able to deploy value rapidly to take
+      advantage of the growth you can see from a great brand. We want to understand
+       what is disruptive about a team’s plan or what is their unique value proposition.
+        We look to understand your go to market and growth strategy and revenue and margin
+         models. We like to also go deep to understand a team’s KPI’s (Key Performance Indicators)
+          that you will be targeting. Finally, of course the clincher is in making sure all
+           these elements can leverage and benefit from one of the World Accelerator domain brands.</p>
+</div>
+
+<button class="collapsible">How are deals on the domains structured?</button>
+<div class="content">
+  <p class="look">It is important that any structure reflects the effort and commitment 
+    by entrepreneurs and that there is alignment with all parties. As a 
+    development team you want control and ownership over the brands you are
+     developing. The use of one of our domain brands takes on the form of a 
+     very attractive license to allow the entrepreneur time to use and build 
+     into the brand without burdening your growth. The brand is an enabler and
+     will further help you accelerate your plans. As you build your business you 
+     can acquire the brand at a capped price in the future or some other payout 
+     structure. This is set upfront which means as you prove successful, you get
+      the upside for your efforts. World gets some ownership in the venture which 
+      gives World upside. The whole program allows for the right alignment and all
+       parties benefit from the use of the brand.</p>
+</div>
+
+<button class="collapsible">I need Capital, how can World help?</button>
+<div class="content">
+  <p class="look">World invests in companies from time to time. 
+    We tend to invest capital to accelerate growth once
+     a team has demonstrated product market fit. We have also participated in
+      follow-on investments in portfolio companies as parts of larger rounds. However,
+       that is just a small part of our funding contribution. Our team has over 50 years of
+        combined experience raising capital from a range of sources. We are well acquainted 
+        with the community of angel investors and venture capitalists and know how to find 
+        financing through seed funding, strategic debt, M&A and IPO’s. World Accelerator also
+         works closely with our team to ensure they have the right components and a successful
+          plan to access capital as needed.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portionn">
+        <button class="collapsiblee">What is World Accelerator?</button>
+        <div class="content">
+          <p class="look">World Accelerator is the first ever Domain Accelerator and gives
+             entrepreneurs the opportunity to develop a business based on prime 
+             Internet real estate. Over the last ten years, the cost and time needed
+              to bring exciting and disruptive businesses to market has dramatically 
+              compressed. However, building credibility with customers, partners and 
+              your brand still takes time. World Accelerator changes this paradigm, 
+              turning it upside down as companies can now start with a powerful existing 
+              brand on day one.</p>
+        </div>
+        <button class="collapsiblee">Where is World Accelerator located?</button>
+        <div class="content">
+          <p class="look">World Accelerator is a global platform. While we are based in midtown 
+            New York our teams and affiliated companies are headquartered all around 
+            the world. Please reach us via our Contact Us form.</p>
+        </div>
+        <button class="collapsiblee">What do you look for in a World Accelerator applicant?</button>
+        <div class="content">
+          <p class="look">We look for focus, passion, and a team’s knowledge of their market. We also look for
+             agile development experience. You must be able to deploy value rapidly to take
+              advantage of the growth you can see from a great brand. We want to understand
+               what is disruptive about a team’s plan or what is their unique value proposition.
+                We look to understand your go to market and growth strategy and revenue and margin
+                 models. We like to also go deep to understand a team’s KPI’s (Key Performance Indicators)
+                  that you will be targeting. Finally, of course the clincher is in making sure all
+                   these elements can leverage and benefit from one of the World Accelerator domain brands.</p>
+        </div>
+
+        <button class="collapsiblee">How are deals on the domains structured?</button>
+        <div class="content">
+          <p class="look">It is important that any structure reflects the effort and commitment 
+            by entrepreneurs and that there is alignment with all parties. As a 
+            development team you want control and ownership over the brands you are
+             developing. The use of one of our domain brands takes on the form of a 
+             very attractive license to allow the entrepreneur time to use and build 
+             into the brand without burdening your growth. The brand is an enabler and
+             will further help you accelerate your plans. As you build your business you 
+             can acquire the brand at a capped price in the future or some other payout 
+             structure. This is set upfront which means as you prove successful, you get
+              the upside for your efforts. World gets some ownership in the venture which 
+              gives World upside. The whole program allows for the right alignment and all
+               parties benefit from the use of the brand.</p>
+        </div>
+
+        <button class="collapsiblee">I need Capital, how can World help?</button>
+        <div class="content">
+          <p class="look">World invests in companies from time to time. 
+            We tend to invest capital to accelerate growth once
+             a team has demonstrated product market fit. We have also participated in
+              follow-on investments in portfolio companies as parts of larger rounds. However,
+               that is just a small part of our funding contribution. Our team has over 50 years of
+                combined experience raising capital from a range of sources. We are well acquainted 
+                with the community of angel investors and venture capitalists and know how to find 
+                financing through seed funding, strategic debt, M&A and IPO’s. World Accelerator also
+                 works closely with our team to ensure they have the right components and a successful
+                  plan to access capital as needed.</p>
+                  </div>
+                </div>
+
+                <div class="atlast">
+                    <a class="acc" href="#">World Acceleration</a>
+                      <p class="head"><strong>Headquartered in New York City; working
+                        with companies located globally and
+                        across the US.</strong></p> 
+                       <!-- <div class="border">
+                         <p class="write">Contact Us
+                          <span class="arey">&#8594;</span>
+                         </p>
+                       </div> -->
+
+
+                       <div class="border">
+                        <a class="write" href="apply.html"><strong>Contact Us</strong>
+                         <span class="arey">&#8594;</span>
+                        </a>
+                      </div>
+                       <div class="footer">© World Media Group, LLC. All Rights Reserved. 
+                        <a class="Privacy" href="apply.html">Privacy</a>
+                        </div>
+                  </div>  
+    </div>
+                    <script>                  
+          function myFunction() {
+       var element = document.getElementById("container");
+       var el = document.getElementById("alls"); 
+       var e = document.getElementById("pho");
+       var elements = document.getElementById("whole"); 
+    //    var ele = document.getElementById("footer");
+       element.classList.toggle("changes"); 
+        elements.classList.toggle("change"); 
+    //    ele.classList.toggle("changed");
+       e.classList.toggle("chan");
+       el.classList.toggle("chann");
+  }
+                      var coll = document.getElementsByClassName("collapsible");
+                      var i;
+                      
+                      for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function() {
+                          this.classList.toggle("active");
+                          var content = this.nextElementSibling;
+                          if (content.style.maxHeight){
+                            content.style.maxHeight = null;
+                          } else {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                          } 
+                        });
+                      }
+                      </script>
+
+  </body>
+</html>

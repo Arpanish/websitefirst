@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+
+body
+{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  /* background-color:rgb(245, 245, 245); */
+}
+.first
+{
+  font-size:48px;
+  line-height:60px;
+  letter-spacing:1px;
+  font-weight:500;
+  margin-top:90px;
+  padding-top: 60px;
+}
+.interest
+{
+  font-size:36px;
+  line-height:46px;
+  letter-spacing:0.5px;
+  font-weight:300;
+  margin-top:40px; 
+}
+.plan
+{
+  line-height:46px;
+  letter-spacing:0.5px;
+  font-weight:300;
+  font-size:20px;
+  margin-top:12px; 
+}
+.border
+{
+  border-bottom: 1px solid black;
+  opacity:1;
+  margin-left:375px;
+  margin-right:377px;
+  margin-top:-12px;
+  width:550px;
+  /* text-align: left; */
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type=text] {
+  width: 100%;
+  padding: 14px 0px; 
+  margin-top:2px; 
+  text-align:left;
+  border-bottom: 2px solid rgb(245, 245, 245);
+  border-top:white;
+  border-left:white;
+  border-right:white;
+  box-sizing:border-box;
+  margin-bottom:50px;
+}
+input[type=text]:focus {
+  border-bottom: 2px solid blue;
+  border-top:white;
+  border-left:white;
+  border-right:white;
+  outline:none;
+  box-sizing:border-box;
+}
+form
+{
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+  width:80%;
+  background:white;
+  text-align:left;
+  margin-top:60px;
+  padding:60px;
+  box-sizing:border-box;
+  color:black;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+textarea
+{
+  width:97%;
+  margin-top:12px; 
+  padding:12px 10px;
+  border-color:rgb(245, 245, 245);
+} 
+.by{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgb(80, 74, 74);
+    padding-top: 35px;
+}
+button{
+    width:150px;
+    background-color: black;
+    border:1px solid black;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.submit{
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+.lastbox{
+    background-color: rgb(245, 245, 245); 
+    width:700px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    /* float: left; */
+}
+ .the{
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 15px;
+} 
+ .h3{
+    text-align: left;
+    padding-top: 70px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    /* margin-top: -20px; */
+
+} 
+.h4{
+    text-align: left;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding-top: 15px;
+}
+@media only screen and (max-width: 790px) {
+    .lastbox{
+        width:auto;
+        background-color: rgb(245, 245, 245);
+    }
+    .first{
+        font-size: 30px;
+    }
+    .interest{
+        font-size: 25px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .border{
+        width:auto;
+    }
+}
+.accdd{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+body{
+    width:100%;
+    margin: 0px;
+}
+ul {
+        list-style-type: none;
+      }
+      .nav {
+        padding: 15px;
+        /* background-color: yellow; */
+      }
+      .line {
+        float: left;
+        margin-left: -30px;
+      }
+       .word {
+        letter-spacing: 1px;
+        line-height: 26.6px;
+        font-weight: 300;
+        font-size: 20px;
+        margin-left: 20px;
+        font-family: "Source Code Pro", monospace;
+      }
+      .fa-caret-right {
+        color: black;
+        font-size: large;
+        float: right;
+        /* margin-top: -18px; */
+        margin-top: -16px;
+        margin-right: 5px;
+        margin-left: 3px;
+      }
+      #aae {
+        color: black;
+        font-size: large;
+        float: right;
+        margin-left: 75px;
+      }
+      .round1 {
+        border-radius: 5px;
+        float: right;
+        margin-left: 640px;
+        display: none;
+      }
+      .firsst {
+        margin-left: 4px;
+        margin-top: -30px;
+        font-size: 16px;
+        font-family: "Cabin", sans-serif;
+        letter-spacing: 1px;
+        background-color: rgb(245, 245, 245);
+        height: 24px;
+        width: 95px;
+        padding-left: 7px;
+        padding-top: 10px;
+        border-radius: 4px;
+      }
+      .nav {
+        background-color:white;
+      }
+      .container {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        top: -5px;
+        z-index: 1;
+      }
+      /* media query of nav */
+      @media only screen and (min-width: 700px) {
+        .bar1 {
+  width: 52px;
+  height: 3px;
+  background-color: black;
+  transition: 0.4s;
+}
+.bar2 {
+  width: 39px;
+  height: 3px;
+  background-color: black;
+  margin-top:10px; 
+  transition: 0.4s;
+}
+.changes .bar1 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(45deg)
+    translate(1px, -4px);
+}
+.changes .bar2 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(-45deg)
+    translate(13px, -7px);
+}
+#container{
+margin-top:-2px;
+/* background-color: yellow; */
+} 
+.cross:hover > .bar1 
+{ 
+margin-top:-3px;    
+}
+.cross:hover > .bar2 
+{ 
+margin-top:16px; 
+}
+.cross.changes:hover > .bar1 {
+  margin-top:0px;
+}
+.cross.changes:hover > .bar2 {
+  margin-top:10px;  
+}
+     
+        .word {
+          margin-left: 40px;
+          font-size: 32px;
+        }
+        .round1 {
+          display: inline-block;
+        }
+        /* .nav{
+            background-color: yellow;
+            width: 100%;
+        } */
+       
+      }
+    
+.bar1 {
+  width: 52px;
+  height: 3px;
+  background-color: black;
+  transition: 0.4s;
+}
+.bar2 {
+  width: 39px;
+  height: 3px;
+  background-color: black;
+  margin-top:10px; 
+  transition: 0.4s;
+}
+.changes .bar1 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(45deg)
+    translate(1px, -4px);
+}
+.changes .bar2 {
+  width:35px;
+  border-radius : 25px;
+  transform: rotate(-45deg)
+    translate(13px, -7px);
+}
+#container{
+margin-top:-2px;
+} 
+.cross:hover > .bar1 
+{ 
+margin-top:-3px;    
+}
+.cross:hover > .bar2 
+{ 
+margin-top:16px; 
+}
+.cross.changes:hover > .bar1 {
+  margin-top:0px;
+}
+.cross.changes:hover > .bar2 {
+  margin-top:10px;  
+}
+ .left{
+  /* float: right; */
+  text-align: center;
+  display: none;
+} 
+.change .left{
+    /* background-color: whitesmoke; */
+  display: inline-block;
+  
+  position: fixed;
+  margin: 0px;
+}
+
+.firstt{
+          width:420px; 
+          font-size: 45px;
+          font-family:Arial, Helvetica, sans-serif;
+          margin-top: 15px;
+          letter-spacing: 1px;
+          text-align: left;
+          color:black;
+      }
+      hr{
+          margin-top: -33px;
+          width: 400px;
+          color: rgb(245, 245, 245);
+      }
+      .and{
+          position:fixed;
+          width: 100%;
+          margin-left: auto;
+          margin-right:auto;
+          margin-top: 100px;
+          
+      } 
+      @media only screen and (max-width: 850px){
+          .firstt{
+              font-size: 33px;
+              letter-spacing: 1px;
+              margin-top: 15px;
+          }
+          hr{
+              margin-top: -21px;
+          }
+      }
+      @media only screen and (max-width: 550px){
+          .firstt{
+              font-size: 20px;
+              letter-spacing: 1px;
+              margin-top: 15px;
+          }
+          hr{
+              margin-top: -15px;
+              width:420px;
+          }
+      }
+      .last{
+          padding-top: 8800px;
+      }
+     
+      .box{
+        margin-left: 15px;
+        width:500px;
+        color:black;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        font-size: 16px;
+        position: relative;
+        top:5px;
+        text-decoration: none;
+      }
+      .rou{
+        background-color: rgb(245, 245, 245);
+        width:100px;
+        height: 35px;
+        color:black;
+        margin-top: -24px;
+        /* margin-left: 1110px; */
+        float:right;
+        margin-right: 12px;
+        border-radius: 5px;
+      }
+      @media only screen and (max-width:700px){
+         .rou{
+          display: none;
+        } 
+      }
+      @media only screen and (min-width:701px){
+         .link{
+          display: none;
+        }
+      }
+      .chann{
+          display: none;
+      }
+      .chan {
+          display: none;
+          /* background-color: red; */
+      }
+      .get{
+          background-color: rgb(245, 245, 245);
+      }
+      .lasts{
+          background-color: rgb(245, 245, 245);
+          margin-top: -22px;
+      }
+
+      
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav">
+          <ul>
+            <li class="line">
+               <a id="container" class = "cross" onclick="myFunction()" href="#">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+               </a>
+              
+               <a id="whole" class="first" href="#">
+                <div class="left">
+                  <div class="and">
+                    <center> <p class="firstt">World Media Group</p>
+                     <hr>
+                     <p class="firstt">World Accelerator</p>
+                     <hr>
+                     <p class="firstt">World Media Group</p>
+                     <hr>
+                     <p class="firstt">News</p>
+                     <hr>
+                     <p class="firstt">Contact Us</p>
+                     <hr></center>
+                    </div>
+                    <div class="last"></div>
+            
+                  </div>
+                </a>
+            </li>
+            <div class="all" id="alls">
+              <li class="word"><a class="accdd" href="demo.html">World Accelerator</a></li>
+            <li class="link">
+              <i class="fa fa-caret-right"></i>
+            </li>
+              <li class="rou">
+              <a class="box" href="world.html">
+                <b>World</b>
+                <i id="aae" class="fa fa-caret-right"></i>
+              </a>
+            </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+     
+
+<div id="about">
+     <div class="get">
+    <center><div class="first">World Accelerator Application</div>
+        <div class="interest">Interested in joining? Apply below.</div>
+        <div class="plan">View our Selection Criteria and Application Rules here.</div>
+        <div class="border"></div> 
+        <!-- <br> -->
+       
+        <form>
+        <label for="name">Your Name *</label>
+        <!-- <br> -->
+        <input type="text" id="name" placeholder="Enter your first and last name">
+        <label for="company name">Company Name</label>
+        <!-- <br>  -->
+        <!-- <br> -->
+        <input type="text" id="company" placeholder="Your company's name">
+          <label for="name">Email *</label>
+          <!-- <br> -->
+        <input type="text" id="email" placeholder="Your email">
+          <label for="name">Location *</label>
+          <!-- <br> -->
+        <input type="text" id="location" placeholder="Your location">
+           <label for="name">Brand of Interest *</label>
+           <!-- <br> -->
+        <input type="text" id="location" placeholder="The domain of interest">
+          <label for="names">What’s your innovative idea for the brand and how are you making a difference?*</label>
+          <textarea rows="9%" cols="100%" placeholder="Respond here or submit a link to a 3 minute video covering your response"></textarea>
+          <br><br><br>
+          <label for="names">Why are you the right team to make it happen? *</label>
+          <textarea rows="9%" cols="100%" placeholder="Please describe"></textarea>
+          <p class="by">By clicking “Submit Now” you acknowledge that you have read and accept the Application Rules.
+          </p>
+          <button>
+              <a class="submit" href="#"><strong>Submit</strong></a>
+          </button>
+            
+      </form>
+      </div>
+      <div class="lasts">
+      <div class="lastbox">
+        <p class="h3"><strong>Selection Criteria</strong></p>
+        <p class="the">
+            The World Accelerator program offers a unique opportunity.
+             We are seeking energetic and creative entrepreneurs interested
+              in developing ‘a domain brand’ into a successful business. 
+              Candidates will be selected based on the following criteria:
+          </p>
+          <p class="the"><strong>A great idea:</strong> What is the big picture concept you will
+               utilize with this premium ‘property’ and where are you making a
+                difference in our world or the people in it?</p>
+                <p class="the"><strong>A solid team:</strong> As important as your idea is, your 
+                    ability to implement it will require you to bring a talented,
+                     high energy and creative team to the table. Having core technology
+                      development capabilities in-house is strongly preferred. Teams need
+                       to be agile and ready for lean rapid deployment.</p>
+                       <p class="the">
+                        Workable, executable strategy: Have you worked out the specific steps 
+                        needed to bring this idea to fruition? Have you implemented any aspects 
+                        of your idea already and are you seeing traction? We like to study KPI’s
+                        and cohort trends.
+                       </p>
+                       <p class="h4"><strong>Application Rules</strong></p>
+                       <p class="the">
+                        Teams can be from anywhere in the World, but must be English speaking. Teams
+                         must be fully dedicated to their business, and have a clear plan to develop
+                          the brand. Teams that submit a business idea understand that ideas submitted 
+                          are not confidential. Multiple people may have the same idea and ideas may be
+                           thought of or implemented by someone else. While we are requesting your ideas 
+                           and why you are the right team to implement them, we request that information 
+                           that you deem as proprietary should not be submitted. For applicants selected,
+                            individual deals are negotiated for mutual benefit and only executed written
+                             agreements commit either party to proceed.
+                       </p>
+      </div>
+    </div>
+    </div>
+      
+      <script>                  
+        function myFunction() {
+     var element = document.getElementById("container");
+     var el = document.getElementById("alls"); 
+     var e = document.getElementById("about");
+     var elements = document.getElementById("whole"); 
+  //    var ele = document.getElementById("footer");
+     element.classList.toggle("changes"); 
+      elements.classList.toggle("change"); 
+  //    ele.classList.toggle("changed");
+      e.classList.toggle("chan");
+     el.classList.toggle("chann");
+}
+</script>
+</body>
+</html>
